@@ -1,3 +1,3 @@
 frase = input("Digite uma frase: ")
 
-print(f"A frase informada possui {len(frase)} caracteres.")
+print(f'A frase informada, "{frase}" possui {len(frase)} caracteres.')

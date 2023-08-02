@@ -5,7 +5,7 @@ def obter_numero():
             numero = int(entrada)
             return numero
         except ValueError:
-            print("Entrada inválida, digite u número inteiro.")
+            print("Entrada inválida, digite um número inteiro.")
 
 
 numero = obter_numero()

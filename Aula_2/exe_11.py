@@ -1,9 +1,3 @@
-pares = []
-
-for numero in range(1, 21):
-    if numero % 2 == 0:
-        pares.append(numero)
-    else:
-        continue
-
+pares = [num for num in range(0, 21) if num % 2 == 0]
+# list comprehension
 print(pares)

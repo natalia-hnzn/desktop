@@ -10,4 +10,4 @@ def obter_temperatura():
 
 temperatura = obter_temperatura()
 
-print(f"A temperatura em Fahrenheit é {round((temperatura*(9/5))+32, 2)}°")
+print(f"A temperatura em Fahrenheit é {round((temperatura*9/5)+32, 2)}°")

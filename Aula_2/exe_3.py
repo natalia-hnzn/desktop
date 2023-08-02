@@ -11,4 +11,4 @@ def obter_numero():
 num_1 = obter_numero()
 num_2 = obter_numero()
 
-print(f"\nA soma dos números é: {num_1+num_2}")
+print(f"\nA soma dos números é: {num_1 + num_2}")
