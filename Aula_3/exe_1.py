@@ -5,3 +5,5 @@ for i in lista_nomes:
         lista_nomes.remove(i)
 
 print(lista_nomes)
+
+# lista_nomes = [nome for nome in lista_nomes if nome and nome.split()]
