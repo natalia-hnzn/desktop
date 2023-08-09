@@ -8,6 +8,11 @@ def obter_numero():
             print("Entrada inválida, digite um número inteiro.")
 
 
+def par_impar(numero):
+    if numero % 2 == 0:
+        return True
+
+
 numero = obter_numero()
 
-print('Par') if numero % 2 == 0 else print('Impar')
+print('Número par') if par_impar(numero) else print('Número ímpar')

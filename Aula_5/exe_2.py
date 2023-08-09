@@ -5,9 +5,9 @@ def obter_numero():
             numero = int(entrada)
             return numero
         except ValueError:
-            print("Entrada inválida, digite um número inteiro.")
+            print("Entrada inválida, digite u número inteiro.")
 
 
-numero = obter_numero()
+number = obter_numero()
 
-print('Par') if numero % 2 == 0 else print('Impar')
+print(f'{number:.2f}')
