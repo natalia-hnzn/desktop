@@ -1,11 +1,15 @@
-class Animal():
+from abc import ABC, abstractmethod
+
+
+class Animal(ABC):
 
     def __init__(self, nome, especie):
         self.nome = nome
         self.especie = especie
 
+    @abstractmethod
     def emitir_som(self):
-        print(f'O animal {self.nome} emite um som')
+        pass
 
 
 class Cachorro(Animal):
