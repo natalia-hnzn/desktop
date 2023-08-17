@@ -16,9 +16,12 @@ class Cachorro(Animal):
 
     def __init__(self, raca, nome, especie):
         super().__init__(nome, especie)
-        self.__raca = ''
+        self.__raca = raca
 
-    def obter_raca(self):
+    def set_raca(self, new_raca):
+        self.__raca = new_raca
+
+    def get_raca(self):
         return self.__raca
 
     def emitir_som(self):
@@ -29,9 +32,12 @@ class Gato(Animal):
 
     def __init__(self, pelagem, nome, especie):
         super().__init__(nome, especie)
-        self.__pelagem = ''
+        self.__pelagem = pelagem
 
-    def obter_pelagem(self):
+    def set_pelagem(self, new_pelagem):
+        self.__pelagem = new_pelagem
+
+    def get_pelagem(self):
         return self.__pelagem
 
     def emitir_som(self):
@@ -41,6 +47,7 @@ class Gato(Animal):
 cachorro = Cachorro('Vira-Lata', 'Pipoca', 'Mamífero')
 gato = Gato('Preta', 'Cake', 'Mamífero')
 
+cachorro.set_raca('Vira-lata')
 cachorro.emitir_som()
 gato.emitir_som()
-print(f'A raça do {cachorro.nome} é {cachorro.obter_raca()}')
+print(f'A raça do {cachorro.nome} é {cachorro.get_raca()}')
